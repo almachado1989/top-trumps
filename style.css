@@ -1,0 +1,78 @@
+:root {
+  --red: #ec1d24;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.card {
+  position: relative;
+  display: grid;
+  background-color: var(--red);
+  color: #fefefe;
+  width: 300px;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 1rem;
+  font-family: Roboto Bold, Trebuchet MS, Helvetica, Arial, sans-serif;
+}
+
+.category {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25rem 0.5rem;
+  margin-bottom: 0.125rem;
+}
+
+.category:nth-child(odd) {
+  background-color: #2f45f5;
+}
+
+.category:nth-child(even) {
+  background-color: var(--red);
+}
+
+.quote {
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--red);
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.name {
+  grid-row: 1;
+  color: #fefefe;
+  font-size: 1.25rem;
+  padding: 0.25rem 0.75rem;
+  margin-bottom: 0.5rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  grid-row: 2;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+
+.logo {
+  position: absolute;
+  background-image: url(https://d23.com/app/uploads/2022/08/1180w-600h_080222_marvel-d23-expo_00.jpg);
+  top: 1rem;
+  right: 1.25rem;
+  height: 3rem;
+  width: 3rem;
+  z-index: 999;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
